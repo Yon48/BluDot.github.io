@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(51, 51, 51, 0.75)),url(images/D5_Image_20231107_094946.png);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 95%;
+    margin: auto;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#im1{
+    width: 150px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+
+}
+.navbar ul li a{
+    text-decoration: none;
+    font-family: calibri;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background:  #5d8aa8;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+.navbar ul li:hover:after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 5%;
+    transform: translateY(50%);
+    text-align: center;
+    color: rgb(65, 65, 65);
+}
+#im2{
+    width: 150px;
+    cursor: pointer;
+}
+.content h1{
+    font-family: calibri;
+    color: aliceblue;
+    font-size: 70px;
+    font-weight: bold;
+    margin-top: 20px auto;
+}
+.content p{
+    font-family: calibri;
+    color: aliceblue;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #5d8aa8;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: #5d8aa8;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.3s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+.rights{
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+}
+.rights p{
+    font-family: calibri;
+    font-size: small;
+    color: #fff;
+}
